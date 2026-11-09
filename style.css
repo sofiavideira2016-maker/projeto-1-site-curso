@@ -1,0 +1,308 @@
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #101820;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Imagem de fundo com camada escura */
+.main {
+    width: 100%;
+    min-height: 100vh;
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ),
+        url("1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+/* Barra superior */
+.navbar {
+    width: 90%;
+    max-width: 1200px;
+    min-height: 85px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo {
+    color: #ff7200;
+    font-size: 35px;
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #ff7200;
+}
+
+/* Campo de pesquisa */
+.search {
+    display: flex;
+    width: 300px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+.search input {
+    width: 200px;
+    min-width: 0;
+    padding: 10px;
+    border: 1px solid #ff7200;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+}
+
+.search button {
+    width: 100px;
+    border: 1px solid #ff7200;
+    border-radius: 0 5px 5px 0;
+    background-color: #ff7200;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* Texto e login lado a lado */
+.content {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 100px 0 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.intro {
+    flex: 1;
+    min-width: 0;
+}
+
+.intro h1 {
+    font-family: "Times New Roman", serif;
+    font-size: 50px;
+    line-height: 1.15;
+    letter-spacing: 2px;
+}
+
+.intro h1 span {
+    color: #ff7200;
+    font-size: 65px;
+}
+
+.description {
+    max-width: 720px;
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 1px;
+}
+
+.join-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 42px;
+    border-radius: 10px;
+    background-color: #ff7200;
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.join-button:hover {
+    background-color: white;
+}
+
+/* Caixa de login */
+.login-box {
+    width: 300px;
+    flex-shrink: 0;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.85);
+    text-align: center;
+}
+
+.login-box h2 {
+    padding: 9px;
+    border-radius: 10px;
+    background-color: white;
+    color: #ff7200;
+    font-size: 22px;
+}
+
+.login-box input {
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-top: 25px;
+    border: none;
+    border-bottom: 1px solid #ff7200;
+    background: transparent;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+input::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+input:focus-visible {
+    outline: 2px solid #ff7200;
+    outline-offset: 3px;
+}
+
+.login-button {
+    width: 100%;
+    height: 40px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff7200;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: white;
+}
+
+.signup {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.signup a {
+    color: #ff7200;
+    text-decoration: none;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}
+
+.login-with {
+    margin-top: 15px;
+    font-family: "Times New Roman", serif;
+}
+
+/* Ícones das redes sociais */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 15px;
+}
+
+.social-icons a {
+    display: flex;
+    color: white;
+    font-size: 28px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ff7200;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 1100px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px 0;
+    }
+
+    .menu ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .content {
+        gap: 30px;
+        padding-top: 60px;
+    }
+
+    .intro h1 {
+        font-size: 42px;
+    }
+
+    .intro h1 span {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 750px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+        gap: 40px;
+    }
+
+    .intro {
+        width: 100%;
+        text-align: center;
+    }
+
+    .intro h1 {
+        font-size: 36px;
+    }
+
+    .intro h1 span {
+        font-size: clamp(28px, 8vw, 44px);
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .search,
+    .login-box {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .search input {
+        flex: 1;
+    }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+
+        <!-- Logo, menu e pesquisa -->
+        <header class="navbar">
+            <h2 class="logo">PraRoz</h2>
+
+            <nav class="menu" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SERVICE</a></li>
+                    <li><a href="#">DESIGN</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+
+            <div class="search">
+                <input
+                    type="search"
+                    placeholder="Type To text"
+                    aria-label="Search"
+                >
+                <button type="button">Search</button>
+            </div>
+        </header>
+
+        <!-- Conteúdo principal -->
+        <main class="content">
+            <section class="intro">
+                <h1>
+                    Web Design &<br>
+                    <span>Development</span><br>
+                    Course
+                </h1>
+
+                <p class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sunt neque expedita atque eveniet quis nesciunt.
+                    Quos nulla vero consequuntur, fugit nemo ad delectus
+                    a quae totam ipsa illum minus laudantium?
+                </p>
+
+                <a class="join-button" href="#">JOIN US</a>
+            </section>
+
+            <!-- Caixa de login -->
+            <section class="login-box" aria-labelledby="login-title">
+                <h2 id="login-title">Login Here</h2>
+
+                <form>
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Enter Email Here"
+                        aria-label="Email"
+                        autocomplete="email"
+                    >
+
+                    <input
+                        type="password"
+                        name="password"
+                        placeholder="Enter Password Here"
+                        aria-label="Password"
+                        autocomplete="current-password"
+                    >
+
+                    <button class="login-button" type="button">
+                        Login
+                    </button>
+                </form>
+
+                <p class="signup">
+                    Don't have an account<br>
+                    <a href="#">Sign up</a> here
+                </p>
+
+                <p class="login-with">Log in with</p>
+
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                    <a href="#" aria-label="Google">
+                        <ion-icon name="logo-google"></ion-icon>
+                    </a>
+                    <a href="#" aria-label="Skype">
+                        <ion-icon name="logo-skype"></ion-icon>
+                    </a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Biblioteca usada para mostrar os ícones -->
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
